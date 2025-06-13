@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Date API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/date:
+    get:
+      summary: Get current server date and time
+      responses:
+        '200':
+          description: Current date
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  date:
+                    type: string
+                    format: date-time
+                    example: '2023-10-01T12:00:00Z'
