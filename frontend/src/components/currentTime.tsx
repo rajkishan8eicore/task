@@ -47,7 +47,7 @@ export default function CurrentTime() {
       <p className="mt-1 text-gray-800 font-bold text-lg">{currentTime}</p>
       <p
         className={`mt-1 ${
-          currentTime ? "text-gray-800" : "text-gray-600"
+          currentTime ? "text-gray-800" : "text-red-600"
         } text-base`}
       >
         {currentDate}
